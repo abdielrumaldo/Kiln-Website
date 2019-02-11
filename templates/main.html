@@ -1,0 +1,18 @@
+  {% extends 'loggedlayout.html' %}
+{% block content %}
+    <meta http-equiv="refresh" content="15" />
+    {% for controller_info in controller_info %}
+        <h1 class="display-2 text-center">{{ controller_info.name }}</h1>
+        <h1 class="display-1 text-center">{{ controller_info.temp }}°F</h1>
+        <p class="display-4 text-center lead">Ramp: {{  controller_info.ramp}} Soak: {{  controller_info.soak}}</p>
+    {% endfor %} 
+
+    <div class="container text-center gap">
+            <button class="btn btn-primary" type="button" value="">Small button</button>
+            <button class="btn btn-primary" type="button" value="">Smaller button</button>
+            <button class="btn btn-primary" type="button" value="">Small button</button>
+            <button class="btn btn-primary" type="button" value="">Smaller button</button>
+            <button class="btn btn-danger" type="button" value="">Smaller button</button>
+    </div>
+
+{% endblock content %}
