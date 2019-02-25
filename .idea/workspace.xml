@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94afab72-0d07-46a4-b6fe-17e1afa379b6" name="Default Changelist" comment="Added modbus functionality&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/jp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jp.iml" afterDir="false" />
+    <list default="true" id="94afab72-0d07-46a4-b6fe-17e1afa379b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/C Files/controller.c" beforeDir="false" afterPath="$PROJECT_DIR$/C Files/controller.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +31,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/C Files/controller.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -43,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/C Files/control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="615">
+              <caret line="41" column="39" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -161,7 +160,7 @@
       <workItem from="1551043634038" duration="12000" />
       <workItem from="1551045801109" duration="2522000" />
       <workItem from="1551051165127" duration="689000" />
-      <workItem from="1551122135644" duration="199000" />
+      <workItem from="1551122135644" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="Created C files in order to change language">
       <created>1551045862570</created>
@@ -198,11 +197,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551049090385</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added modbus functionality&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;">
+      <created>1551122430070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551122430070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c">
+      <created>1551122534006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551122534006</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3575000" />
+    <option name="totallyTimeSpent" value="4456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1867" height="1055" extended-state="6" />
@@ -239,7 +252,8 @@
     <MESSAGE value="Created C files in order to change language&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;" />
     <MESSAGE value="Added modbus functionality" />
     <MESSAGE value="Added modbus functionality&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added modbus functionality&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
@@ -249,6 +263,13 @@
           <folding>
             <element signature="e#0#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C Files/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -262,17 +283,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/C Files/control.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/C Files/controller.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
