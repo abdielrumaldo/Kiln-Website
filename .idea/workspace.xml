@@ -19,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="540">
               <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
@@ -31,10 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/C Files/controller.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="564">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -42,25 +40,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/C Files/control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="224">
+              <caret line="210" column="10" lean-forward="true" selection-end-line="306" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forms.py">
+        <entry file="file://$PROJECT_DIR$/C Files/PIDAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-405" />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>long</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -76,15 +74,16 @@
       <list>
         <option value="$PROJECT_DIR$/forms.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/C Files/control.py" />
         <option value="$PROJECT_DIR$/C Files/controller.c" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
+    <option name="x" value="249" />
+    <option name="y" value="27" />
+    <option name="width" value="1390" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -160,7 +159,9 @@
       <workItem from="1551043634038" duration="12000" />
       <workItem from="1551045801109" duration="2522000" />
       <workItem from="1551051165127" duration="689000" />
-      <workItem from="1551122135644" duration="1080000" />
+      <workItem from="1551122135644" duration="1418000" />
+      <workItem from="1551131252862" duration="4599000" />
+      <workItem from="1551285130215" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="Created C files in order to change language">
       <created>1551045862570</created>
@@ -211,17 +212,31 @@
       <option name="project" value="LOCAL" />
       <updated>1551122534006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c">
+      <created>1551123435703</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551123435703</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c">
+      <created>1551123528473</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551123528473</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4456000" />
+    <option name="totallyTimeSpent" value="11658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1867" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18725975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19220209" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,27 +267,12 @@
     <MESSAGE value="Created C files in order to change language&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;" />
     <MESSAGE value="Added modbus functionality" />
     <MESSAGE value="Added modbus functionality&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;&#10;Signed-off-by: abdielrumaldo &lt;7h3unkn0wn1412@gmail.com&gt;&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;C Files/controller.c" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C Files/control.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -283,12 +283,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C Files/PIDAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C Files/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="210" column="10" lean-forward="true" selection-end-line="306" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/C Files/controller.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="564">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
