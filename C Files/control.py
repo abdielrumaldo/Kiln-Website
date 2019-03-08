@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+`#!/usr/bin/env python
 import sys
 sys.path.append('/usr/lib/')
 import minimalmodbus
@@ -20,31 +20,31 @@ instrument.serial.timeout = 1
 def swap32(x):
 	return struct.unpack('>i', x)[0]
 
-def temperature(instrument):
-	try: 
-		temp = instrument.read_float(0x0280)
-	except:
-		print("Unexpected error with Setpoint 1", sys.exc_info()[0])
+# def temperature(instrument):
+# 	try:
+# 		temp = instrument.read_float(0x0280)
+# 	except:
+# 		print("Unexpected error with Setpoint 1", sys.exc_info()[0])
+#
+# 	else:
+# 		return int(temp)
 		
-	else:
-		return int(temp)	
-		
-def read_runmode(instrument):
-	try:
-		runmode = instrument.read_register(0x0240)
-	except:
-		print("Unexpected error with System Status", sys.exc_info()[0])
-	else: 
-		return runmode
+# def read_runmode(instrument):
+# 	try:
+# 		runmode = instrument.read_register(0x0240)
+# 	except:
+# 		print("Unexpected error with System Status", sys.exc_info()[0])
+# 	else:
+# 		return runmode
 
 def read_system_status(instrument):
 	try:
 		runmode = instrument.read_long(0x0204)
 	except:
 		print("Unexpected error with System Status", sys.exc_info()[0])
-	else: 
+	else:
 		return runmode
-		
+
 		
 def write_run_mode(instrument, mode):
 	if mode > 12 or mode <= 0:
@@ -56,13 +56,13 @@ def write_run_mode(instrument, mode):
 	else: 
 		return read_runmode(instrument)
 
-def read_setpoint_1(intrument):
-	try:
-		setpoint = instrument.read_float(0x0220)
-	except:
-		print("Unexpected error with System Status", sys.exc_info()[0])
-	else: 
-		return setpoint	
+# def read_setpoint_1(intrument):
+# 	try:
+# 		setpoint = instrument.read_float(0x0220)
+# 	except:
+# 		print("Unexpected error with System Status", sys.exc_info()[0])
+# 	else:
+# 		return setpoint
 		
 def write_setpoint_1(instrument, value):
 	if  value <= 0:
@@ -164,7 +164,7 @@ def write_current_segment(instrument, value):
 	if value >8 or value <=0:
 		return "Invalid value you can only select segment between 1 and 9"
 	try:
-		pidoutput = instrument.read_register(0x0262, value, functioncode=6)
+		pidoutput = instrument.read_register(0x0263, value, functioncode=6)
 	except:
 		print("Unexpected error with System Status", sys.exc_info()[0])
 	else: 

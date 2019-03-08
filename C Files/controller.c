@@ -12,8 +12,7 @@
 #include <errno.h>
 #include <math.h>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
 	// Versioning
 	// printf("Compiled with libmodbus version %s\n", LIBMODBUS_VERSION_STRING);
 
@@ -30,6 +29,7 @@ int main(int argc, char const *argv[])
         fprintf(stderr, "Failed to create the context: %s\n", modbus_strerror(errno));
         exit(1);
     }
+
     // Establish Modbus connection
     if (modbus_connect(ctx) == -1) {
         fprintf(stderr, "Unable to connect: %s\n", modbus_strerror(errno));
@@ -37,45 +37,121 @@ int main(int argc, char const *argv[])
         exit(1);
 	 }
 
-    /*Read Long*/
-    uint16_t tab_reg[64];
-    int i;
-    int rc = modbus_read_registers(ctx, 640, 2, tab_reg);
-    uint16_t* temp = tab_reg;
-    float result = modbus_get_float_dcba(temp);
-
-    if (rc == -1) {
-    fprintf(stderr, "%s\n", modbus_strerror(errno));
-    return -1;
-}
-	printf("%f", result);
-
-
-	/*Read register
-    uint16_t tab_reg[64];
-    int i;
-    int rc = modbus_read_registers(ctx, 576, 1, tab_reg);
-
-    if (rc == -1) {
-    fprintf(stderr, "%s\n", modbus_strerror(errno));
-    return -1;
-	}
-
-	for (i=0; i < rc; i++) {
-    printf("%d",tab_reg[i]);
-	}
-	*/
-
-	//debugging (prints results of the register)
-    //for (i=0; i < rc; i++) {
-    //printf("reg[%d]=%d (0x%X)\n", i, tab_reg[i], tab_reg[i]);
-    //}
-
-
-
 	modbus_close(ctx);
     modbus_free(ctx);
 
     return 0;
 }
+
+// reads float
+void read_float(modbus_t *ctx, char command[]){
+
+    uint16_t tab_reg[64];
+    uint16_t* temp = tab_reg;
+    float result;
+    int rc;
+    int address;
+
+    switch (command){
+
+        case READ_TEMPERATURE:
+            address = 640;
+            break;
+
+        case READ_SETPOINT:
+            address = 544;
+            break;
+
+        case READ_CONTROL_SETPOINT:
+            address = 548;
+            break;
+
+        case READ_PID_OUTPUT:
+            address = 554
+            break;
+
+        default:
+        address = 640;
+    }
+
+    rc = modbus_read_registers(ctx, address, 2, tab_reg);
+
+    if (rc == -1) {
+        fprintf(stderr, "%s\n", modbus_strerror(errno));
+        return -1;
+    }
+    else {
+      result = modbus_get_float_dcba(temp);
+      prinf("%f", result);
+    }
+}
+
+//reads register
+void read_register(modbus_t *ctx, char command[]){
+
+    uint16_t tab_reg[64];
+    int rc;
+    int address;
+
+    switch (command){
+
+        case READ_RUNMODE:
+            address = 576;
+            break;
+
+        case READ_RAMP_SOAK_STATE:
+            address = 558;
+            break;
+
+        case READ_RAMP_SOAK_MODE:
+            address = 608;
+            break;
+
+        case READ_RAMP_SOAK_PROFILE_SELECT:
+            address = 609
+            break;
+
+        case READ_CURRENT_PROFILE:
+            address = 610;
+            break;
+
+        case READ_CURRENT_SEGMENT:
+            address = 611;
+            break;
+
+        case READ_SEGMENTS_PER_PROFILE:
+            address = 612:
+            break;
+
+        case READ_SOAK_ACTION:
+            address = 613;
+            break;
+
+        case READ_SOAK_LINK:
+            address = 614;
+            break;
+
+        case READ_TRACKING_TYPE:
+            address = 615;
+            break;
+
+        case READ_RAMP_SOAK_STATE:
+            address = 628;
+            break;
+
+        default:
+            address = 576;
+    }
+
+    rc = modbus_read_registers(ctx, address, 1, tab_reg);
+
+    if (rc == -1) {
+    fprintf(stderr, "%s\n", modbus_strerror(errno));
+    return -1;
+    }
+    else {
+        fprint("%d", rc);
+    }
+}
+
 
