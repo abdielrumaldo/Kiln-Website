@@ -40,15 +40,20 @@ int main(int argc, char const *argv[]){
         exit(1);
 	 }
 	 
-	 float temperature = read_float(ctx, 1);
-	 float setpoint = read_float(ctx, 2);
-	 float pid_output =  read_float(ctx, 3);
-	 printf("Temperature: %.0f \nSetpoint: %.0f\nPID Output: %.0f\n", temperature, setpoint, pid_output );
-	 
+	float temperature = read_float(ctx, 1);
+	float setpoint = read_float(ctx, 2);
+	float pid_output =  read_float(ctx, 3);
+	printf("Temperature: %.0f \nSetpoint: %.0f\nPID Output: %.0f\n", temperature, setpoint, pid_output );
+
 
 	modbus_close(ctx);
     modbus_free(ctx);
 
+    if(argc>1){
+        printf("Greetings, %s!n",argv[1]);
+        return(0);
+    }
+        
     return 0;
 }
 
@@ -150,18 +155,13 @@ void read_register(modbus_t *ctx, int command){
             break;
 
         case 9:
-        //READ_SOAK_LINK
+        //READ_SOAK_LINK DEPRICADED FEATURE
             address = 614;
             break;
 
         case 10:
         //READ_TRACKING_TYPE
             address = 615;
-            break;
-
-        case 11:
-        //READ_RAMP_SOAK_STATE
-            address = 628;
             break;
 
         default:
