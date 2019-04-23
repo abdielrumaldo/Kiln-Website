@@ -16,7 +16,7 @@ while 1:
     cnx = sql.connect(
     host="chip.swau.edu",
     user="rumaldoa",
-    passwd="Jantex1513!",
+    passwd="password",
     db="KilnProject"
     )
     
