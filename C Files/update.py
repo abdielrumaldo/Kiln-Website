@@ -1,4 +1,4 @@
-import MySQLdb as sql
+import MyS1QLdb as sql
 import datetime
 import time
 
