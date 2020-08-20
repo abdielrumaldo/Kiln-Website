@@ -2,7 +2,7 @@ from flask import Flask, render_template, flash, redirect, url_for
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = '861db8c975667c34420ed6a23acc20c8'
+app.config['SECRET_KEY'] = ''
 
 controller_info = [
     {
